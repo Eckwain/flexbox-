@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd8e4;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Карточка */
+.card {
+  width: 250px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Верхняя часть с картинкой и кнопками */
+.card__header {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Бейджи и плавающие кнопки на картинке */
+.card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.card__badge--new {
+  background-color: #ff1e27;
+  color: #ffffff;
+}
+
+.card__btn-fav {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card__btn-add {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: none;
+  background-color: #5d5fef;
+  color: #ffffff;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* Информационная часть */
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.card__promo {
+  background-color: #00c853;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f1f1f;
+}
+
+.card__desc {
+  font-size: 13px;
+  line-height: 1.3;
+  color: #7a7a7a;
+}
+
+.card__price {
+  font-size: 17px;
+  font-weight: 800;
+  color: #1a1a1a;
+  margin-top: 4px;
+}
+
+/* Модификатор темной темы (по БЭМ) */
+.card--dark {
+  background-color: #1b1b1b;
+}
+
+.card--dark .card__title {
+  color: #ffffff;
+}
+
+.card--dark .card__desc {
+  color: #a0a0a0;
+}
+
+.card--dark .card__price {
+  color: #ffffff;
+}

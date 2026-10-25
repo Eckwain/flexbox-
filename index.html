@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка товара</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Для темной версии просто добавляется класс: card card--dark -->
+  <article class="card">
+    <div class="card__header">
+      <img class="card__image" src="tea.jpg" alt="Освежающий чай">
+      <span class="card__badge card__badge--new">🔥 NEW</span>
+      <button class="card__btn-fav" type="button" aria-label="В избранное">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </button>
+      <button class="card__btn-add" type="button" aria-label="Добавить в корзину">+</button>
+    </div>
+
+    <div class="card__body">
+      <div class="card__promo">⚡ 12.12 Promo</div>
+      <h2 class="card__title">Refreshing Tea</h2>
+      <p class="card__desc">Shaken Iced Tea<br>Lemonade</p>
+      <div class="card__price">$ 2,88</div>
+    </div>
+  </article>
+
+</body>
+</html>
